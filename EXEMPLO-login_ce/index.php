@@ -1,0 +1,16 @@
+<?php
+//Inclui o arquivo de verificação de sessão.
+include_once("verifica.php");
+?>
+<html><head><title>Página Exemplo</title></head>
+<body>
+	<?php 
+		$usuario = $_SESSION['user'];
+		print "<p>Bem vindo, $usuario!"; 
+	?>
+	<a href='logout.php'>Sair</a>
+	<h3>Exemplo de Aplicação Utilizando Login</h3>
+	<p>Este texto só pode ser visualizado por usuários 
+		que estão logados na aplicação.</p>	
+</body>	
+</html>
